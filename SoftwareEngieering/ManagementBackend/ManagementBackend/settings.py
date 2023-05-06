@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = 'django-insecure-b!_(eh3g3u)p+e_n7!(%z79p)9qk!(4-wp7jr0$qii(^3y7=c#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'userApp',
+    'knowledgeMap',
 ]
 
 MIDDLEWARE = [
@@ -79,14 +80,26 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'software_engineering',
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
+        'USER': 'root',
+        'PASSWORD': 'rootpasswd',
+        'HOST': '114.116.46.173',
         'PORT': 3306
-    }
+    },
+    'DB_1': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'knowledge_map',
+        'USER': 'root',
+        'PASSWORD': 'rootpasswd',
+        'HOST': '114.116.46.173',
+        'PORT': 3306,
+    },
 }
 
-
+DATABASE_ROUTERS = ['ManagementBackend.database_router.DatabaseAppsRouter']
+DATABASE_APPS_MAPPING = {
+    'userApp': 'default',
+    'knowledgeMap': 'DB_1',
+}
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -124,5 +137,55 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,   # 删除已存在其他日志的Handler
+    'formatters': {
+        'verbose': {
+            # 输出日志级别名称，日志消息以及生成日志消息的时间，进程，线程和模块
+            'format': '%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s',
+            'datefmt': "%Y-%m-%d %H:%M:%S"
+        },
+        'simple': { # 定义命名为 simple 的格式化
+            'format': '%(levelname)s %(asctime)s %(message)s' # 仅输出日志级别名称（例如 DEBUG）和日志消息。
+        },
+    },
+    'handlers': {
+        # 定义命名为 console 的处理器，将INFO级别的日志使用 stream 流处理打印到控制台
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple' # 使用 simple，只输出日志等级以及 messages 信息
+        },
+        # 输出日志到文件，按日期滚动
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            # TimedRotatingFileHandler的参数
+            # 参照https://docs.python.org/3/library/logging.handlers.html#timedrotatingfilehandler
+            # 目前设定每天一个日志文件
+            'filename': 'logs/manage.log',
+            'when': 'd',
+            'interval': 100,
+            'backupCount': 100,  # 备份100
+            'formatter': 'verbose' # 使用复杂的verbose详细信息输出
+        },
+        # 发送邮件，目前腾讯云、阿里云的服务器对外发送邮件都有限制，暂时不使用
+        'email': {
+            'level': 'ERROR',
+            'class': 'django.utils.log.AdminEmailHandler',
+            'include_html': True,
+        }
+    },
+    'loggers': {
+        # 不同的logger
+        'django': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+            'propagate': True,
+        },
+    },
+}
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

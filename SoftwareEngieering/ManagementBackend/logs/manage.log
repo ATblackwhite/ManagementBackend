@@ -1,0 +1,7 @@
+INFO 2023-05-06 15:38:42 autoreload 4776 20100 Watching for file changes with StatReloader
+INFO 2023-05-06 15:38:49 basehttp 4776 8060 "GET /admin/userApp/knowledgeuser/ HTTP/1.1" 200 10358
+INFO 2023-05-06 15:38:51 basehttp 4776 8060 "GET /admin/knowledgeMap/collections/ HTTP/1.1" 200 16310
+INFO 2023-05-06 15:38:51 basehttp 4776 8060 "GET /admin/jsi18n/ HTTP/1.1" 200 8376
+INFO 2023-05-06 15:38:56 basehttp 4776 8060 "GET /admin/admin/logentry/ HTTP/1.1" 200 13832
+INFO 2023-05-06 15:38:56 basehttp 4776 8060 "GET /admin/jsi18n/ HTTP/1.1" 200 8376
+INFO 2023-05-06 15:38:57 basehttp 4776 8060 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
