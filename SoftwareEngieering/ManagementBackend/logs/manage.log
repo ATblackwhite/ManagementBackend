@@ -5,3 +5,10 @@ INFO 2023-05-06 15:38:51 basehttp 4776 8060 "GET /admin/jsi18n/ HTTP/1.1" 200 83
 INFO 2023-05-06 15:38:56 basehttp 4776 8060 "GET /admin/admin/logentry/ HTTP/1.1" 200 13832
 INFO 2023-05-06 15:38:56 basehttp 4776 8060 "GET /admin/jsi18n/ HTTP/1.1" 200 8376
 INFO 2023-05-06 15:38:57 basehttp 4776 8060 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2023-05-06 16:42:05 autoreload 12780 10408 Watching for file changes with StatReloader
+WARNING 2023-05-06 16:42:06 log 12780 4368 Not Found: /
+WARNING 2023-05-06 16:42:06 basehttp 12780 4368 "GET / HTTP/1.1" 404 179
+WARNING 2023-05-06 16:42:06 log 12780 4368 Not Found: /favicon.ico
+WARNING 2023-05-06 16:42:06 basehttp 12780 4368 "GET /favicon.ico HTTP/1.1" 404 179
+INFO 2023-05-06 16:42:13 basehttp 12780 4368 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-05-06 16:42:14 basehttp 12780 4368 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2216
