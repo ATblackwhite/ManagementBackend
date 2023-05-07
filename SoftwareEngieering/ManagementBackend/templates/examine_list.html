@@ -1,0 +1,121 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        background-color: #f0f2fa;
+        font-family: "PT Sans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+        color: #555f77;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .comments {
+        margin: 2.5rem auto 0;
+        max-width: 60.75rem;
+        padding: 0 1.25rem;
+    }
+    .comment-wrap {
+        margin-bottom: 1.25rem;
+        display: table;
+        width: 100%;
+        min-height: 5.3125rem;
+    }
+
+    .comment-block {
+        padding: 1rem;
+        background-color: #fff;
+        display: table-cell;
+        vertical-align: top;
+        border-radius: 0.1875rem;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    }
+
+    .comment-text {
+        margin-bottom: 1.25rem;
+    }
+    .bottom-comment {
+        color: #acb4c2;
+        font-size: 0.875rem;
+    }
+    .comment-date {
+        float: left;
+    }
+    .comment-actions {
+        float: right;
+    }
+    .comment-actions li {
+        display: inline;
+    }
+
+    .button-accept {
+        display: inline;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        background: green;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 20px;
+        line-height: 1.33337;
+        font-weight: 400;
+        letter-spacing: -.01em;
+        font-family: "","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+        padding: 4px 11px;
+        margin-right: 20px;
+    }
+
+    .button-reject {
+        display: inline;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        background: red;
+        color: #fff;
+        border-radius: 10px;
+        font-size: 20px;
+        line-height: 1.33337;
+        font-weight: 400;
+        letter-spacing: -.01em;
+        padding: 4px 11px;
+        margin-right: 20px;
+    }
+
+</style>
+<body>
+    <div class="comments">
+        <div class="comment-wrap">
+            <div class="comment-block">
+                {% for comment in comments %}
+                    {% if comment.is_finished == False %}
+                        <p class="comment-text">{{comment.literal_comment }}</p>
+                        {% if comment.image_comment != null %}
+                            <img alt="image_comment" src="/media/{{ comment.image_comment }}">
+                        {% endif %}
+                        <div class="bottom-comment">
+                            <div class="comment-date">{{comment.date | date:"Y-m-d H:i:s"}}</div>
+                            <ul class="comment-actions">
+                                <li>
+                                    <a href="/examine/accept/?comment_id={{ comment.id }}" class="button-accept">accept</a>
+                                </li>
+                                <li>
+                                    <a href="/examine/reject/?comment_id={{ comment.id }}" class="button-reject">reject</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <HR width="100%" color="lightgrey" SIZE=3/>
+                    {% endif %}
+                {% empty %}
+                <p>暂无未审核的页面</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

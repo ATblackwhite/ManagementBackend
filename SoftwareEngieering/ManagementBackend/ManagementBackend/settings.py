@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = ''
+SECRET_KEY = 'django-insecure-b!_(eh3g3u)p+e_n7!(%z79p)9qk!(4-wp7jr0$qii(^3y7=c#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '114.116.46.173']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'userApp',
     'knowledgeMap',
+    'examine',
 ]
 
 MIDDLEWARE = [
@@ -65,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -93,12 +95,21 @@ DATABASES = {
         'HOST': '114.116.46.173',
         'PORT': 3306,
     },
+    'DB_2': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'examine',
+        'USER': 'root',
+        'PASSWORD': 'rootpasswd',
+        'HOST': '114.116.46.173',
+        'PORT': 3306,
+    }
 }
 
 DATABASE_ROUTERS = ['ManagementBackend.database_router.DatabaseAppsRouter']
 DATABASE_APPS_MAPPING = {
     'userApp': 'default',
     'knowledgeMap': 'DB_1',
+    'examine': 'DB_2',
 }
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -135,6 +146,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
+
+MEDIA_URL = '/MEDIA/'
+MEDIA_ROOT = BASE_DIR / 'static/images'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

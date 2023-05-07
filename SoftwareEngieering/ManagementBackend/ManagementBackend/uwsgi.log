@@ -1,0 +1,421 @@
+*** Starting uWSGI 2.0.21 (64bit) on [Sat May  6 16:44:29 2023] ***
+compiled with version: 9.3.0 on 15 December 2022 11:53:58
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: hecs-198466
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/ManagementBackend/SoftwareEngieering/ManagementBackend/ManagementBackend
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/ManagementBackend/SoftwareEngieering/ManagementBackend
+your processes number limit is 7580
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:46115 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+Python main interpreter initialized at 0x561f85540eb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561f85540eb0 pid: 629694 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 629694)
+spawned uWSGI worker 1 (pid: 629696, cores: 2)
+spawned uWSGI http 1 (pid: 629697)
+[pid: 629696|app: 0|req: 1/1] 124.126.98.221 () {38 vars in 789 bytes} [Sat May  6 16:44:33 2023] GET /admin/ => generated 6088 bytes in 113 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:44:33,606 Not Found: /static/admin/css/dashboard.css
+[pid: 629696|app: 0|req: 2/2] 124.126.98.221 () {36 vars in 703 bytes} [Sat May  6 16:44:33 2023] GET /static/admin/css/dashboard.css => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:44:33,607 Not Found: /static/admin/css/dark_mode.css
+WARNING 2023-05-06 16:44:33,608 Not Found: /static/admin/css/nav_sidebar.css
+[pid: 629696|app: 0|req: 4/3] 124.126.98.221 () {36 vars in 703 bytes} [Sat May  6 16:44:33 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:44:33,609 Not Found: /static/admin/css/base.css
+[pid: 629696|app: 0|req: 5/4] 124.126.98.221 () {36 vars in 707 bytes} [Sat May  6 16:44:33 2023] GET /static/admin/css/nav_sidebar.css => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:44:33,611 Not Found: /static/admin/css/responsive.css
+[pid: 629696|app: 0|req: 6/5] 124.126.98.221 () {36 vars in 693 bytes} [Sat May  6 16:44:33 2023] GET /static/admin/css/base.css => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629696|app: 0|req: 6/6] 124.126.98.221 () {36 vars in 705 bytes} [Sat May  6 16:44:33 2023] GET /static/admin/css/responsive.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:44:33,637 Not Found: /static/admin/js/nav_sidebar.js
+[pid: 629696|app: 0|req: 7/7] 124.126.98.221 () {36 vars in 688 bytes} [Sat May  6 16:44:33 2023] GET /static/admin/js/nav_sidebar.js => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629696|app: 0|req: 8/8] 124.126.98.221 () {34 vars in 591 bytes} [Sat May  6 16:44:33 2023] GET /admin/ => generated 6088 bytes in 34 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 629696|app: 0|req: 9/9] 124.126.98.221 () {38 vars in 789 bytes} [Sat May  6 16:44:35 2023] GET /admin/ => generated 6088 bytes in 37 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:44:35,264 Not Found: /static/admin/css/dashboard.css
+[pid: 629696|app: 0|req: 10/10] 124.126.98.221 () {36 vars in 703 bytes} [Sat May  6 16:44:35 2023] GET /static/admin/css/dashboard.css => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:44:35,265 Not Found: /static/admin/css/nav_sidebar.css
+WARNING 2023-05-06 16:44:35,266 Not Found: /static/admin/css/dark_mode.css
+[pid: 629696|app: 0|req: 12/11] 124.126.98.221 () {36 vars in 707 bytes} [Sat May  6 16:44:35 2023] GET /static/admin/css/nav_sidebar.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:44:35,267 Not Found: /static/admin/css/base.css
+[pid: 629696|app: 0|req: 13/12] 124.126.98.221 () {36 vars in 703 bytes} [Sat May  6 16:44:35 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629696|app: 0|req: 14/13] 124.126.98.221 () {36 vars in 693 bytes} [Sat May  6 16:44:35 2023] GET /static/admin/css/base.css => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:44:35,269 Not Found: /static/admin/css/responsive.css
+[pid: 629696|app: 0|req: 14/14] 124.126.98.221 () {36 vars in 705 bytes} [Sat May  6 16:44:35 2023] GET /static/admin/css/responsive.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:44:35,282 Not Found: /static/admin/js/nav_sidebar.js
+[pid: 629696|app: 0|req: 15/15] 124.126.98.221 () {36 vars in 688 bytes} [Sat May  6 16:44:35 2023] GET /static/admin/js/nav_sidebar.js => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 629696|app: 0|req: 16/16] 124.126.98.221 () {34 vars in 591 bytes} [Sat May  6 16:44:35 2023] GET /admin/ => generated 6088 bytes in 34 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 629696|app: 0|req: 17/17] 124.126.98.221 () {40 vars in 820 bytes} [Sat May  6 16:44:37 2023] GET /admin/ => generated 6088 bytes in 35 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:44:38,031 Not Found: /static/admin/css/base.css
+[pid: 629696|app: 0|req: 18/18] 124.126.98.221 () {40 vars in 755 bytes} [Sat May  6 16:44:38 2023] GET /static/admin/css/base.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:44:38,033 Not Found: /static/admin/css/nav_sidebar.css
+[pid: 629696|app: 0|req: 19/19] 124.126.98.221 () {40 vars in 769 bytes} [Sat May  6 16:44:38 2023] GET /static/admin/css/nav_sidebar.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:44:38,034 Not Found: /static/admin/css/dark_mode.css
+[pid: 629696|app: 0|req: 20/20] 124.126.98.221 () {40 vars in 765 bytes} [Sat May  6 16:44:38 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:44:38,070 Not Found: /static/admin/css/dashboard.css
+WARNING 2023-05-06 16:44:38,071 Not Found: /static/admin/css/responsive.css
+[pid: 629696|app: 0|req: 22/21] 124.126.98.221 () {40 vars in 765 bytes} [Sat May  6 16:44:38 2023] GET /static/admin/css/dashboard.css => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629696|app: 0|req: 22/22] 124.126.98.221 () {40 vars in 767 bytes} [Sat May  6 16:44:38 2023] GET /static/admin/css/responsive.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:44:38,083 Not Found: /static/admin/js/nav_sidebar.js
+[pid: 629696|app: 0|req: 23/23] 124.126.98.221 () {40 vars in 750 bytes} [Sat May  6 16:44:38 2023] GET /static/admin/js/nav_sidebar.js => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629696|app: 0|req: 24/24] 124.126.98.221 () {34 vars in 591 bytes} [Sat May  6 16:44:38 2023] GET /admin/ => generated 6088 bytes in 34 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+SIGINT/SIGTERM received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 629697)
+worker 1 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.21 (64bit) on [Sat May  6 16:45:34 2023] ***
+compiled with version: 9.3.0 on 15 December 2022 11:53:58
+os: Linux-5.4.0-100-generic #113-Ubuntu SMP Thu Feb 3 18:43:29 UTC 2022
+nodename: hecs-198466
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /root/ManagementBackend/SoftwareEngieering/ManagementBackend/ManagementBackend
+writing pidfile to uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/ManagementBackend/SoftwareEngieering/ManagementBackend
+your processes number limit is 7580
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on 0.0.0.0:8000 fd 4
+uwsgi socket 0 bound to TCP address 127.0.0.1:32807 (port auto-assigned) fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.8.10 (default, Nov 14 2022, 12:59:47)  [GCC 9.4.0]
+Python main interpreter initialized at 0x5647a4177eb0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5647a4177eb0 pid: 629733 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 629733)
+spawned uWSGI worker 1 (pid: 629735, cores: 2)
+spawned uWSGI http 1 (pid: 629736)
+[pid: 629735|app: 0|req: 1/1] 124.126.98.221 () {36 vars in 798 bytes} [Sat May  6 16:45:51 2023] GET /admin/ => generated 0 bytes in 79 msecs (HTTP/1.1 302) 11 headers in 471 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 2/2] 124.126.98.221 () {36 vars in 791 bytes} [Sat May  6 16:45:51 2023] GET /admin/login/?next=/admin/ => generated 2220 bytes in 48 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:45:51,588 Not Found: /static/admin/css/dark_mode.css
+[pid: 629735|app: 0|req: 3/3] 124.126.98.221 () {36 vars in 729 bytes} [Sat May  6 16:45:51 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 5/4] 124.126.98.221 () {36 vars in 714 bytes} [Sat May  6 16:45:51 2023] GET /static/admin/js/nav_sidebar.js => generated 1360 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 308 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 6/5] 124.126.98.221 () {36 vars in 721 bytes} [Sat May  6 16:45:51 2023] GET /static/admin/css/login.css => generated 939 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 288 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 7/6] 124.126.98.221 () {36 vars in 719 bytes} [Sat May  6 16:45:51 2023] GET /static/admin/css/base.css => generated 19513 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 289 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 8/7] 124.126.98.221 () {36 vars in 733 bytes} [Sat May  6 16:45:51 2023] GET /static/admin/css/nav_sidebar.css => generated 2271 bytes in 6 msecs via sendfile() (HTTP/1.1 200) 8 headers in 295 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 8/8] 124.126.98.221 () {36 vars in 731 bytes} [Sat May  6 16:45:51 2023] GET /static/admin/css/responsive.css => generated 18545 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 295 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 9/9] 124.126.98.221 () {36 vars in 721 bytes} [Sat May  6 16:45:51 2023] GET /static/admin/css/fonts.css => generated 423 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 288 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 10/10] 124.126.98.221 () {38 vars in 788 bytes} [Sat May  6 16:45:51 2023] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 85876 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 309 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 11/11] 124.126.98.221 () {38 vars in 784 bytes} [Sat May  6 16:45:51 2023] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 85692 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 307 bytes (0 switches on core 1)
+WARNING 2023-05-06 16:45:52,226 Not Found: /favicon.ico
+[pid: 629735|app: 0|req: 12/12] 124.126.98.221 () {36 vars in 726 bytes} [Sat May  6 16:45:52 2023] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 13/13] 124.126.98.221 () {46 vars in 1002 bytes} [Sat May  6 16:46:02 2023] POST /admin/login/?next=/admin/ => generated 0 bytes in 320 msecs (HTTP/1.1 302) 12 headers in 634 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 14/14] 124.126.98.221 () {40 vars in 897 bytes} [Sat May  6 16:46:03 2023] GET /admin/ => generated 6088 bytes in 38 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:46:03,134 Not Found: /static/admin/css/dark_mode.css
+[pid: 629735|app: 0|req: 15/15] 124.126.98.221 () {36 vars in 754 bytes} [Sat May  6 16:46:03 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 16/16] 124.126.98.221 () {36 vars in 754 bytes} [Sat May  6 16:46:03 2023] GET /static/admin/css/dashboard.css => generated 380 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 292 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 18/17] 124.126.98.221 () {36 vars in 820 bytes} [Sat May  6 16:46:03 2023] GET /static/admin/img/icon-changelink.svg => generated 380 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 303 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 18/18] 124.126.98.221 () {36 vars in 814 bytes} [Sat May  6 16:46:03 2023] GET /static/admin/img/icon-addlink.svg => generated 331 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 300 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 19/19] 124.126.98.221 () {38 vars in 826 bytes} [Sat May  6 16:46:03 2023] GET /static/admin/fonts/Roboto-Bold-webfont.woff => generated 86184 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 306 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 20/20] 124.126.98.221 () {38 vars in 897 bytes} [Sat May  6 16:46:07 2023] GET /admin/knowledgeMap/collections/ => generated 16695 bytes in 132 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 21/21] 124.126.98.221 () {36 vars in 790 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/js/vendor/jquery/jquery.min.js => generated 89476 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 308 bytes (0 switches on core 1)
+WARNING 2023-05-06 16:46:07,323 Not Found: /static/admin/css/dark_mode.css
+[pid: 629735|app: 0|req: 22/22] 124.126.98.221 () {36 vars in 779 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 24/23] 124.126.98.221 () {36 vars in 794 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/js/vendor/xregexp/xregexp.min.js => generated 125266 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 310 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 25/24] 124.126.98.221 () {38 vars in 824 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/css/base.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 5 headers in 175 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 25/25] 124.126.98.221 () {38 vars in 838 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/css/nav_sidebar.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 5 headers in 175 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 26/26] 124.126.98.221 () {36 vars in 783 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/css/changelists.css => generated 6874 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 295 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 27/27] 124.126.98.221 () {38 vars in 836 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/css/responsive.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 5 headers in 175 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 29/28] 124.126.98.221 () {36 vars in 764 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/js/jquery.init.js => generated 347 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 307 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 29/29] 124.126.98.221 () {36 vars in 730 bytes} [Sat May  6 16:46:07 2023] GET /admin/jsi18n/ => generated 8603 bytes in 24 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 30/30] 124.126.98.221 () {36 vars in 750 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/js/core.js => generated 5698 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 301 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 31/31] 124.126.98.221 () {36 vars in 756 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/js/actions.js => generated 6540 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 304 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 32/32] 124.126.98.221 () {36 vars in 754 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/js/urlify.js => generated 7902 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 303 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 33/33] 124.126.98.221 () {36 vars in 764 bytes} [Sat May  6 16:46:07 2023] GET /static/admin/js/prepopulate.js => generated 1531 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 308 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 34/34] 124.126.98.221 () {38 vars in 820 bytes} [Sat May  6 16:46:08 2023] GET /static/admin/css/fonts.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 5 headers in 175 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 35/35] 124.126.98.221 () {36 vars in 794 bytes} [Sat May  6 16:46:08 2023] GET /static/admin/js/admin/RelatedObjectLookups.js => generated 5984 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 317 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 36/36] 124.126.98.221 () {38 vars in 819 bytes} [Sat May  6 16:46:08 2023] GET /static/admin/js/nav_sidebar.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 5 headers in 175 bytes (0 switches on core 0)
+WARNING 2023-05-06 16:46:08,492 Not Found: /static/admin/js/filters.js
+[pid: 629735|app: 0|req: 37/37] 124.126.98.221 () {36 vars in 756 bytes} [Sat May  6 16:46:08 2023] GET /static/admin/js/filters.js => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 38/38] 124.126.98.221 () {36 vars in 808 bytes} [Sat May  6 16:46:08 2023] GET /static/admin/img/search.svg => generated 458 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 294 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 40/39] 124.126.98.221 () {36 vars in 812 bytes} [Sat May  6 16:46:08 2023] GET /static/admin/img/tooltag-add.svg => generated 331 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 299 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 41/40] 124.126.98.221 () {40 vars in 883 bytes} [Sat May  6 16:46:08 2023] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 0 bytes in 2 msecs (HTTP/1.1 304) 5 headers in 175 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 41/41] 124.126.98.221 () {40 vars in 887 bytes} [Sat May  6 16:46:08 2023] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 0 bytes in 0 msecs (HTTP/1.1 304) 5 headers in 175 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 42/42] 124.126.98.221 () {38 vars in 912 bytes} [Sat May  6 16:46:10 2023] GET /admin/userApp/libraryuser/ => generated 11284 bytes in 88 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:46:10,165 Not Found: /static/admin/css/dark_mode.css
+[pid: 629735|app: 0|req: 43/43] 124.126.98.221 () {36 vars in 774 bytes} [Sat May  6 16:46:10 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 44/44] 124.126.98.221 () {36 vars in 725 bytes} [Sat May  6 16:46:10 2023] GET /admin/jsi18n/ => generated 8603 bytes in 24 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:46:10,202 Not Found: /static/admin/js/filters.js
+[pid: 629735|app: 0|req: 45/45] 124.126.98.221 () {36 vars in 751 bytes} [Sat May  6 16:46:10 2023] GET /static/admin/js/filters.js => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 46/46] 124.126.98.221 () {36 vars in 807 bytes} [Sat May  6 16:46:10 2023] GET /static/admin/img/icon-yes.svg => generated 436 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 296 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 47/47] 124.126.98.221 () {36 vars in 805 bytes} [Sat May  6 16:46:10 2023] GET /static/admin/img/icon-no.svg => generated 560 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 295 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 48/48] 124.126.98.221 () {38 vars in 911 bytes} [Sat May  6 16:46:11 2023] GET /admin/userApp/knowledgeuser/ => generated 10808 bytes in 80 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:46:11,556 Not Found: /static/admin/css/dark_mode.css
+[pid: 629735|app: 0|req: 49/49] 124.126.98.221 () {36 vars in 776 bytes} [Sat May  6 16:46:11 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 50/50] 124.126.98.221 () {36 vars in 727 bytes} [Sat May  6 16:46:11 2023] GET /admin/jsi18n/ => generated 8603 bytes in 24 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:46:11,585 Not Found: /static/admin/js/filters.js
+[pid: 629735|app: 0|req: 51/51] 124.126.98.221 () {36 vars in 753 bytes} [Sat May  6 16:46:11 2023] GET /static/admin/js/filters.js => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 52/52] 124.126.98.221 () {38 vars in 899 bytes} [Sat May  6 16:46:12 2023] GET /admin/admin/logentry/ => generated 14143 bytes in 106 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:46:13,149 Not Found: /static/admin/css/dark_mode.css
+[pid: 629735|app: 0|req: 53/53] 124.126.98.221 () {36 vars in 769 bytes} [Sat May  6 16:46:13 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 54/54] 124.126.98.221 () {36 vars in 720 bytes} [Sat May  6 16:46:13 2023] GET /admin/jsi18n/ => generated 8603 bytes in 24 msecs (HTTP/1.1 200) 7 headers in 230 bytes (1 switches on core 0)
+WARNING 2023-05-06 16:46:13,177 Not Found: /static/admin/js/filters.js
+[pid: 629735|app: 0|req: 55/55] 124.126.98.221 () {36 vars in 746 bytes} [Sat May  6 16:46:13 2023] GET /static/admin/js/filters.js => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 56/56] 124.126.98.221 () {36 vars in 816 bytes} [Sat May  6 16:46:13 2023] GET /static/admin/img/sorting-icons.svg => generated 1097 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 302 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 57/57] 124.126.98.221 () {38 vars in 911 bytes} [Sat May  6 16:46:22 2023] GET /admin/userApp/knowledgeuser/ => generated 10808 bytes in 87 msecs (HTTP/1.1 200) 10 headers in 471 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 58/58] 124.126.98.221 () {32 vars in 527 bytes} [Sat May  6 16:46:35 2023] GET /userApp/login/keyword=LibraryUser/?username=peter&password=123456 => generated 162 bytes in 21 msecs (HTTP/1.1 200) 6 headers in 199 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 59/59] 124.126.98.224 () {36 vars in 684 bytes} [Sat May  6 16:49:14 2023] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 6 headers in 216 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 60/60] 124.126.98.224 () {36 vars in 686 bytes} [Sat May  6 16:49:14 2023] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 10 headers in 372 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 61/61] 124.126.98.224 () {36 vars in 723 bytes} [Sat May  6 16:49:14 2023] GET /admin/login/?next=/admin/ => generated 2220 bytes in 5 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 62/62] 124.126.98.224 () {38 vars in 697 bytes} [Sat May  6 16:49:14 2023] GET /static/admin/css/base.css => generated 19513 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 289 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 63/63] 124.126.98.224 () {38 vars in 711 bytes} [Sat May  6 16:49:14 2023] GET /static/admin/css/nav_sidebar.css => generated 2271 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 295 bytes (0 switches on core 1)
+WARNING 2023-05-06 16:49:14,298 Not Found: /static/admin/css/dark_mode.css
+[pid: 629735|app: 0|req: 64/64] 124.126.98.224 () {38 vars in 707 bytes} [Sat May  6 16:49:14 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 66/65] 124.126.98.224 () {38 vars in 699 bytes} [Sat May  6 16:49:14 2023] GET /static/admin/css/login.css => generated 939 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 288 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 66/66] 124.126.98.224 () {38 vars in 709 bytes} [Sat May  6 16:49:14 2023] GET /static/admin/css/responsive.css => generated 18545 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 295 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 67/67] 124.126.98.224 () {38 vars in 692 bytes} [Sat May  6 16:49:14 2023] GET /static/admin/js/nav_sidebar.js => generated 1360 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 308 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 68/68] 124.126.98.224 () {38 vars in 699 bytes} [Sat May  6 16:49:14 2023] GET /static/admin/css/fonts.css => generated 423 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 288 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 70/69] 124.126.98.224 () {40 vars in 762 bytes} [Sat May  6 16:49:14 2023] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 85692 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 307 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 70/70] 124.126.98.224 () {40 vars in 766 bytes} [Sat May  6 16:49:14 2023] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 85876 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 309 bytes (0 switches on core 0)
+WARNING 2023-05-06 16:49:14,953 Not Found: /favicon.ico
+[pid: 629735|app: 0|req: 71/71] 124.126.98.224 () {38 vars in 715 bytes} [Sat May  6 16:49:14 2023] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:49:20,026 Not Found: /static/admin/css/dark_mode.css
+[pid: 629735|app: 0|req: 72/72] 124.126.98.224 () {38 vars in 707 bytes} [Sat May  6 16:49:20 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 73/73] 124.126.98.221 () {38 vars in 789 bytes} [Sat May  6 16:52:22 2023] GET /admin/ => generated 6088 bytes in 38 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 74/74] 124.126.98.221 () {36 vars in 707 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/css/nav_sidebar.css => generated 2271 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 295 bytes (0 switches on core 0)
+WARNING 2023-05-06 16:52:23,066 Not Found: /static/admin/css/dark_mode.css
+[pid: 629735|app: 0|req: 75/75] 124.126.98.221 () {36 vars in 703 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[pid: 629735|app: 0|req: 77/76] 124.126.98.221 () {36 vars in 703 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/css/dashboard.css => generated 380 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 292 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 78/77] 124.126.98.221 () {36 vars in 705 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/css/responsive.css => generated 18545 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 295 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 78/78] 124.126.98.221 () {36 vars in 693 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/css/base.css => generated 19513 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 289 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 79/79] 124.126.98.221 () {36 vars in 688 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/js/nav_sidebar.js => generated 1360 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 308 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 80/80] 124.126.98.221 () {36 vars in 714 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/css/fonts.css => generated 423 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 288 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 82/81] 124.126.98.221 () {36 vars in 774 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/img/icon-addlink.svg => generated 331 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 8 headers in 300 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 82/82] 124.126.98.221 () {36 vars in 780 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/img/icon-changelink.svg => generated 380 bytes in 2 msecs via sendfile() (HTTP/1.1 200) 8 headers in 303 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 84/83] 124.126.98.221 () {38 vars in 775 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/fonts/Roboto-Bold-webfont.woff => generated 86184 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 306 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 85/84] 124.126.98.221 () {38 vars in 781 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/fonts/Roboto-Regular-webfont.woff => generated 85876 bytes in 3 msecs via sendfile() (HTTP/1.1 200) 8 headers in 309 bytes (0 switches on core 1)
+[pid: 629735|app: 0|req: 85/85] 124.126.98.221 () {38 vars in 777 bytes} [Sat May  6 16:52:23 2023] GET /static/admin/fonts/Roboto-Light-webfont.woff => generated 85692 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 8 headers in 307 bytes (0 switches on core 0)
+[pid: 629735|app: 0|req: 86/86] 124.126.98.221 () {34 vars in 591 bytes} [Sat May  6 16:52:23 2023] GET /admin/ => generated 6088 bytes in 37 msecs (HTTP/1.1 200) 10 headers in 470 bytes (1 switches on core 1)
+WARNING 2023-05-06 16:52:27,036 Not Found: /static/admin/css/dark_mode.css
+[pid: 629735|app: 0|req: 87/87] 124.126.98.221 () {36 vars in 703 bytes} [Sat May  6 16:52:27 2023] GET /static/admin/css/dark_mode.css => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 19:39:35,883 Not Found: /
+[pid: 629735|app: 0|req: 88/88] 223.111.175.27 () {28 vars in 298 bytes} [Sat May  6 19:39:35 2023] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 20:11:08,033 Not Found: /
+[pid: 629735|app: 0|req: 89/89] 142.93.150.63 () {30 vars in 430 bytes} [Sat May  6 20:11:08 2023] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 20:11:18,459 Not Found: /api/islogged
+[pid: 629735|app: 0|req: 90/90] 142.93.150.63 () {30 vars in 454 bytes} [Sat May  6 20:11:18 2023] GET /api/islogged => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+[uwsgi-http key:  client_addr: 111.7.96.147 client_port: 63111] hr_read(): Connection reset by peer [plugins/http/http.c line 918]
+WARNING 2023-05-06 21:14:33,006 Not Found: /
+[pid: 629735|app: 0|req: 91/91] 111.7.96.147 () {28 vars in 301 bytes} [Sat May  6 21:14:33 2023] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-06 21:14:38,684 Not Found: /
+[pid: 629735|app: 0|req: 92/92] 111.7.96.172 () {42 vars in 727 bytes} [Sat May  6 21:14:38 2023] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+ERROR 2023-05-06 21:14:39,888 Invalid HTTP_HOST header: 'linsblog.site:8000'. You may need to add 'linsblog.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.8/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'linsblog.site:8000'. You may need to add 'linsblog.site' to ALLOWED_HOSTS.
+WARNING 2023-05-06 21:14:39,889 Bad Request: /
+[pid: 629735|app: 0|req: 93/93] 111.7.96.155 () {42 vars in 727 bytes} [Sat May  6 21:14:39 2023] GET / => generated 143 bytes in 2 msecs (HTTP/1.1 400) 4 headers in 172 bytes (1 switches on core 0)
+ERROR 2023-05-06 21:14:40,761 Invalid HTTP_HOST header: 'www.linsblog.site:8000'. You may need to add 'www.linsblog.site' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.8/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.linsblog.site:8000'. You may need to add 'www.linsblog.site' to ALLOWED_HOSTS.
+WARNING 2023-05-06 21:14:40,762 Bad Request: /
+[pid: 629735|app: 0|req: 94/94] 111.7.96.153 () {42 vars in 731 bytes} [Sat May  6 21:14:40 2023] GET / => generated 143 bytes in 1 msecs (HTTP/1.1 400) 4 headers in 172 bytes (1 switches on core 0)
+ERROR 2023-05-06 22:00:36,734 Invalid HTTP_HOST header: 'hecs-198466:8000'. You may need to add 'hecs-198466' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.8/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'hecs-198466:8000'. You may need to add 'hecs-198466' to ALLOWED_HOSTS.
+WARNING 2023-05-06 22:00:36,734 Bad Request: /
+[pid: 629735|app: 0|req: 95/95] 64.227.38.36 () {22 vars in 221 bytes} [Sat May  6 22:00:36 2023] GET / => generated 143 bytes in 1 msecs (HTTP/1.0 400) 4 headers in 172 bytes (1 switches on core 1)
+ERROR 2023-05-06 22:00:39,280 Invalid HTTP_HOST header: 'hecs-198466:8000'. You may need to add 'hecs-198466' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.8/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'hecs-198466:8000'. You may need to add 'hecs-198466' to ALLOWED_HOSTS.
+WARNING 2023-05-06 22:00:39,280 Bad Request: /nice ports,/Trinity.txt.bak
+[pid: 629735|app: 0|req: 96/96] 64.227.38.36 () {22 vars in 283 bytes} [Sat May  6 22:00:39 2023] GET /nice%20ports%2C/Tri%6Eity.txt%2ebak => generated 143 bytes in 1 msecs (HTTP/1.0 400) 4 headers in 172 bytes (1 switches on core 1)
+ERROR 2023-05-06 22:00:48,039 Invalid HTTP_HOST header: 'hecs-198466:8000'. You may need to add 'hecs-198466' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.8/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'hecs-198466:8000'. You may need to add 'hecs-198466' to ALLOWED_HOSTS.
+WARNING 2023-05-06 22:00:48,040 Bad Request: /
+[pid: 629735|app: 0|req: 97/97] 64.227.38.36 () {22 vars in 224 bytes} [Sat May  6 22:00:48 2023] OPTIONS / => generated 143 bytes in 1 msecs (HTTP/1.0 400) 4 headers in 172 bytes (1 switches on core 0)
+ERROR 2023-05-06 22:00:48,755 Invalid HTTP_HOST header: 'hecs-198466:8000'. You may need to add 'hecs-198466' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.8/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'hecs-198466:8000'. You may need to add 'hecs-198466' to ALLOWED_HOSTS.
+WARNING 2023-05-06 22:00:48,756 Bad Request: /
+[pid: 629735|app: 0|req: 98/98] 64.227.38.36 () {22 vars in 225 bytes} [Sat May  6 22:00:48 2023] OPTIONS / => generated 143 bytes in 1 msecs (RTSP/1.0 400) 4 headers in 172 bytes (1 switches on core 1)
+ERROR 2023-05-06 22:00:49,452 Invalid HTTP_HOST header: 'hecs-198466:8000'. You may need to add 'hecs-198466' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.8/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'hecs-198466:8000'. You may need to add 'hecs-198466' to ALLOWED_HOSTS.
+WARNING 2023-05-06 22:00:49,453 Bad Request: /sip:nm
+[pid: 629735|app: 0|req: 99/99] 64.227.38.36 () {40 vars in 471 bytes} [Sat May  6 22:00:49 2023] OPTIONS sip:nm => generated 143 bytes in 1 msecs (SIP/2.0 400) 4 headers in 171 bytes (1 switches on core 1)
+WARNING 2023-05-06 23:12:05,698 Not Found: /
+[pid: 629735|app: 0|req: 100/100] 106.75.101.166 () {34 vars in 611 bytes} [Sat May  6 23:12:05 2023] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-06 23:12:05,712 Not Found: /favicon.ico
+[pid: 629735|app: 0|req: 101/101] 106.75.101.166 () {34 vars in 624 bytes} [Sat May  6 23:12:05 2023] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-06 23:12:05,732 Not Found: /sitemap.xml
+WARNING 2023-05-06 23:12:05,733 Not Found: /robots.txt
+[pid: 629735|app: 0|req: 103/103] 106.75.101.166 () {34 vars in 624 bytes} [Sat May  6 23:12:05 2023] GET /sitemap.xml => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+[pid: 629735|app: 0|req: 103/103] 106.75.101.166 () {34 vars in 632 bytes} [Sat May  6 23:12:05 2023] GET /robots.txt => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+ERROR 2023-05-07 05:14:38,971 Invalid HTTP_HOST header: 'passport.baidu.com:80'. You may need to add 'passport.baidu.com' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.8/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'passport.baidu.com:80'. You may need to add 'passport.baidu.com' to ALLOWED_HOSTS.
+WARNING 2023-05-07 05:14:38,972 Bad Request: /http:/passport.baidu.com/
+[pid: 629735|app: 0|req: 104/104] 8.222.203.92 () {28 vars in 366 bytes} [Sun May  7 05:14:38 2023] GET http://passport.baidu.com/ => generated 143 bytes in 1 msecs (HTTP/1.1 400) 4 headers in 172 bytes (1 switches on core 1)
+WARNING 2023-05-07 08:24:11,843 Not Found: /
+[pid: 629735|app: 0|req: 105/105] 64.62.197.136 () {30 vars in 462 bytes} [Sun May  7 08:24:11 2023] GET / => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+ERROR 2023-05-07 08:24:24,229 Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.8/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+WARNING 2023-05-07 08:24:24,230 Bad Request: /http:/api.ipify.org/
+[pid: 629735|app: 0|req: 106/106] 64.62.197.128 () {26 vars in 470 bytes} [Sun May  7 08:24:24 2023] GET http://api.ipify.org/?format=json => generated 143 bytes in 1 msecs (HTTP/1.1 400) 4 headers in 172 bytes (1 switches on core 1)
+ERROR 2023-05-07 08:24:27,387 Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 135, in __call__
+    response = self.process_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/usr/local/lib/python3.8/dist-packages/django/http/request.py", line 148, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+WARNING 2023-05-07 08:24:27,388 Bad Request: /www.shadowserver.org:443
+[pid: 629735|app: 0|req: 107/107] 64.62.197.126 () {32 vars in 551 bytes} [Sun May  7 08:24:27 2023] CONNECT www.shadowserver.org:443 => generated 143 bytes in 1 msecs (HTTP/1.1 400) 4 headers in 172 bytes (1 switches on core 0)
+[uwsgi-http key:  client_addr: 143.42.118.45 client_port: 11494] hr_read(): Connection reset by peer [plugins/http/http.c line 918]
+WARNING 2023-05-07 11:08:42,040 Not Found: /
+[pid: 629735|app: 0|req: 108/108] 143.42.118.45 () {26 vars in 273 bytes} [Sun May  7 11:08:42 2023] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-07 11:08:42,491 Not Found: /
+[pid: 629735|app: 0|req: 109/109] 143.42.118.45 () {28 vars in 431 bytes} [Sun May  7 11:08:42 2023] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-07 11:08:42,945 Not Found: /version
+[pid: 629735|app: 0|req: 110/110] 143.42.118.45 () {30 vars in 357 bytes} [Sun May  7 11:08:42 2023] GET /version => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-07 11:08:43,374 Not Found: /.vscode/sftp.json
+[pid: 629735|app: 0|req: 111/111] 143.42.118.45 () {30 vars in 377 bytes} [Sun May  7 11:08:43 2023] GET /.vscode/sftp.json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-07 11:08:43,832 Not Found: /about
+[pid: 629735|app: 0|req: 112/112] 143.42.118.45 () {30 vars in 353 bytes} [Sun May  7 11:08:43 2023] GET /about => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-07 11:08:44,313 Not Found: /debug/default/view
+[pid: 629735|app: 0|req: 113/113] 143.42.118.45 () {30 vars in 402 bytes} [Sun May  7 11:08:44 2023] GET /debug/default/view?panel=config => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-07 11:08:44,765 Not Found: /v2/_catalog
+[pid: 629735|app: 0|req: 114/114] 143.42.118.45 () {32 vars in 395 bytes} [Sun May  7 11:08:44 2023] GET /v2/_catalog => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-07 11:08:45,210 Not Found: /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application
+[pid: 629735|app: 0|req: 115/115] 143.42.118.45 () {30 vars in 492 bytes} [Sun May  7 11:08:45 2023] GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-07 11:08:45,665 Not Found: /server-status
+[pid: 629735|app: 0|req: 116/116] 143.42.118.45 () {30 vars in 369 bytes} [Sun May  7 11:08:45 2023] GET /server-status => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-07 11:08:46,132 Not Found: /login.action
+[pid: 629735|app: 0|req: 117/117] 143.42.118.45 () {30 vars in 367 bytes} [Sun May  7 11:08:46 2023] GET /login.action => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-07 11:08:46,564 Not Found: /_all_dbs
+[pid: 629735|app: 0|req: 118/118] 143.42.118.45 () {32 vars in 447 bytes} [Sun May  7 11:08:46 2023] GET /_all_dbs => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-07 11:08:46,999 Not Found: /.DS_Store
+[pid: 629735|app: 0|req: 119/119] 143.42.118.45 () {30 vars in 361 bytes} [Sun May  7 11:08:46 2023] GET /.DS_Store => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-07 11:08:47,443 Not Found: /.env
+[pid: 629735|app: 0|req: 120/120] 143.42.118.45 () {30 vars in 351 bytes} [Sun May  7 11:08:47 2023] GET /.env => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-07 11:08:47,879 Not Found: /.git/config
+[pid: 629735|app: 0|req: 121/121] 143.42.118.45 () {30 vars in 365 bytes} [Sun May  7 11:08:47 2023] GET /.git/config => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-07 11:08:48,326 Not Found: /s/337313e26343e2631313e2431313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties
+[pid: 629735|app: 0|req: 122/122] 143.42.118.45 () {30 vars in 543 bytes} [Sun May  7 11:08:48 2023] GET /s/337313e26343e2631313e2431313/_/;/META-INF/maven/com.atlassian.jira/jira-webapp-dist/pom.properties => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-07 11:08:48,757 Not Found: /config.json
+[pid: 629735|app: 0|req: 123/123] 143.42.118.45 () {30 vars in 365 bytes} [Sun May  7 11:08:48 2023] GET /config.json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+WARNING 2023-05-07 11:08:49,191 Not Found: /telescope/requests
+[pid: 629735|app: 0|req: 124/124] 143.42.118.45 () {30 vars in 379 bytes} [Sun May  7 11:08:49 2023] GET /telescope/requests => generated 179 bytes in 3 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-07 11:08:49,623 Not Found: /
+[pid: 629735|app: 0|req: 125/125] 143.42.118.45 () {30 vars in 392 bytes} [Sun May  7 11:08:49 2023] GET /?rest_route=/wp/v2/users/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
+invalid request block size: 4946 (max 4096)...skip
+[uwsgi-http key: 114.116.46.173:8000 client_addr: 95.214.55.244 client_port: 52941] hr_instance_read(): Connection reset by peer [plugins/http/http.c line 647]
+WARNING 2023-05-07 12:06:06,840 Not Found: /
+[pid: 629735|app: 0|req: 126/126] 107.170.255.9 () {30 vars in 340 bytes} [Sun May  7 12:06:06 2023] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 1)
+WARNING 2023-05-07 12:24:57,439 Not Found: /
+[pid: 629735|app: 0|req: 127/127] 80.66.77.238 () {30 vars in 339 bytes} [Sun May  7 12:24:57 2023] GET / => generated 179 bytes in 2 msecs (HTTP/1.1 404) 6 headers in 214 bytes (1 switches on core 0)
