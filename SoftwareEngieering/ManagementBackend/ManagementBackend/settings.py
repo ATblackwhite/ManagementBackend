@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'userApp',
     'knowledgeMap',
     'examine',
+    'app',
+    'web',
 ]
 
 MIDDLEWARE = [
@@ -102,6 +104,22 @@ DATABASES = {
         'PASSWORD': 'rootpasswd',
         'HOST': '114.116.46.173',
         'PORT': 3306,
+    },
+    'web': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'web',
+        'USER': 'root',
+        'PASSWORD': 'rootpasswd',
+        'HOST': '114.116.46.173',
+        'PORT': 3306,
+    },
+    'app': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'app',
+        'USER': 'root',
+        'PASSWORD': 'rootpasswd',
+        'HOST': '114.116.46.173',
+        'PORT': 3306,
     }
 }
 
@@ -110,6 +128,8 @@ DATABASE_APPS_MAPPING = {
     'userApp': 'default',
     'knowledgeMap': 'DB_1',
     'examine': 'DB_2',
+    'app': 'app',
+    'web': 'web',
 }
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators

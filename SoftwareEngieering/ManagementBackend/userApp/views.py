@@ -85,20 +85,16 @@ def register(request, keyword):
 
 
 def login(request, keyword):
-    if request.method == 'POST':
-        data = {
-            'code': 404,
-            'error_msg': '请使用GET请求'
-        }
-        return JsonResponse(data, json_dumps_params={'ensure_ascii': False})
     if request.method == 'GET':
         username = request.GET.get('username')
         password = request.GET.get('password')
+        # print(username)
+        # print(password)
         try:
             # 判断请求来自博物馆系统还是知识服务系统
-            if(keyword == "keyword=LibraryUser"):
+            if (keyword == "keyword=LibraryUser"):
                 user = LibraryUser.objects.get(UserName=username)
-            elif(keyword == "keyword=KnowledgeUser"):
+            elif (keyword == "keyword=KnowledgeUser"):
                 user = KnowledgeUser.objects.get(UserName=username)
             else:
                 msg = 'url错误'
@@ -111,7 +107,7 @@ def login(request, keyword):
                 # return render(request, 'login.html')
 
             if password == user.PassWord:
-                if(user.Gender == 1):
+                if (user.Gender == 1):
                     gender = "男"
                 else:
                     gender = "女"
@@ -142,3 +138,10 @@ def login(request, keyword):
                 'error_msg': msg
             }
             return JsonResponse(data, json_dumps_params={'ensure_ascii': False})
+
+    elif request.method == 'POST':
+        data = {
+            'code': 404,
+            'error_msg': '请使用GET请求'
+        }
+        return JsonResponse(data, json_dumps_params={'ensure_ascii': False})
