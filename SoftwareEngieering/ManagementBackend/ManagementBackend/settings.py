@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-b!_(eh3g3u)p+e_n7!(%z79p)9qk!(4-wp7jr0$qii(^3y7=c#'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', '114.116.46.173']
+ALLOWED_HOSTS = ['127.0.0.1', '']
 
 
 # Application definition
@@ -85,40 +85,40 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'software_engineering',
         'USER': 'root',
-        'PASSWORD': 'rootpasswd',
-        'HOST': '114.116.46.173',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': 3306
     },
     'DB_1': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'knowledge_map',
         'USER': 'root',
-        'PASSWORD': 'rootpasswd',
-        'HOST': '114.116.46.173',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': 3306,
     },
     'DB_2': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'examine',
         'USER': 'root',
-        'PASSWORD': 'rootpasswd',
-        'HOST': '114.116.46.173',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': 3306,
     },
     'web': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'web',
         'USER': 'root',
-        'PASSWORD': 'rootpasswd',
-        'HOST': '114.116.46.173',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': 3306,
     },
     'app': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'app',
         'USER': 'root',
-        'PASSWORD': 'rootpasswd',
-        'HOST': '114.116.46.173',
+        'PASSWORD': '',
+        'HOST': '',
         'PORT': 3306,
     }
 }
